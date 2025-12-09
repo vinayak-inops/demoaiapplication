@@ -15,7 +15,7 @@ import { Loader2, Database, Search, Bell, Settings, HelpCircle } from 'lucide-re
 
 const App: React.FC = () => {
   // Removed isAuthenticated state
-  const [activeTab, setActiveTab] = useState('dashboard');
+  const [activeTab, setActiveTab] = useState('compliance');
   const [data, setData] = useState<Contractor[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -87,7 +87,7 @@ const App: React.FC = () => {
       case 'verification': return <IdentityVerification />;
       case 'bgv': return <BGVVerification />;
       case 'compliance': return <ComplianceAssistant contractors={data} />;
-      default: return <Dashboard contractors={data} />;
+      default: return <ComplianceAssistant contractors={data} />;
     }
   };
 
