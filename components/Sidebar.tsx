@@ -11,8 +11,8 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   const menuItems = [
-    { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
-    { id: 'contractors', label: 'Contractors', icon: Users },
+    // { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
+    // { id: 'contractors', label: 'Contractors', icon: Users },
     { id: 'employees', label: 'Employees', icon: UserCheck },
     { id: 'analytics', label: 'Analytics', icon: BarChart3 },
     { id: 'reconciliation', label: 'Reconciliation', icon: FileSpreadsheet },
